@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "fmt"
+	"fmt"
 	"os"
 )
 
@@ -22,6 +22,16 @@ func main() {
 */
 
 //crawler
+/*
 func main(){
   breadthFirst(crawl, os.Args[1:])
+}
+*/
+
+func main() {
+	for _, url := range os.Args[1:] {
+		if title(url) != nil {
+			fmt.Fprintf(os.Stderr, "title in %s : %v", url, title(url))
+		}
+	}
 }

@@ -30,7 +30,7 @@ func main(){
 
 func main() {
 	for _, url := range os.Args[1:] {
-		if title(url) != nil {
+    if title(url) != nil {
 			fmt.Fprintf(os.Stderr, "title in %s : %v", url, title(url))
 		}
 	}

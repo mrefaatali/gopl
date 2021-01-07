@@ -1,7 +1,7 @@
 package main
 
 import "fmt"
-
+/*
 //a type with a method that matches the signature of io.Write
 type ByteCounter int
 
@@ -12,7 +12,7 @@ func (c *ByteCounter) Write(p []byte) (n int, err error) {
   return
 }
 
-/*
+
 func main() {
 	var c ByteCounter
 	l,e := c.Write([]byte("hello"))

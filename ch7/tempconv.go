@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 )
-
+/*
 type Celsius float64
 type Fahrenheit float64
 
@@ -46,7 +46,7 @@ func CelsiusFlag(name string, value Celsius, usage string) *Celsius {
 	return &f.Celsius
 }
 
-/*
+
 func main() {
 	var temp = CelsiusFlag("temp", 20.0, "the temperature")
 
